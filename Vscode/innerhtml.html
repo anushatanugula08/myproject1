@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col
+        {
+            float:left;
+            width: 45%;
+            border: solid;
+            height: 100pt;
+            margin-right: 20pt;
+            margin-top: 20pt;
+            margin-left: 10pt;
+            background-color: rgb(113, 208, 215);
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        function changeit()
+        {
+            var a=document.getElementById("id1").innerHTML;
+            alert(a);
+            document.getElementById("id1").innerHTML="<h2>Welcome to inner HTML</h2>"
+            // document.getElementById("id1").innerText="<h2>Welcome to inner HTML</h2>"
+        }
+        var count=0;
+        function increment()
+        {
+             count++;
+            document.getElementById("id2").innerHTML="Count is "+count
+           
+        }
+         function decrement()
+        {
+            count--;
+            document.getElementById("id2").innerHTML="Count is "+count
+            
+        }
+       function total() {
+    // 1. Get the values from the input fields
+    var quantity = document.getElementById("pn").value; 
+    var price = document.getElementById("cost").value;
+
+    // 2. Perform the calculation
+    var res = parseInt(quantity) * parseInt(price);
+
+    // 3. Update the display using the calculation result (res)
+    // We check if res is a number to avoid "NaN" (Not a Number) errors
+    if (!isNaN(res)) {
+        document.getElementById("tot").innerHTML = "Total is: " + res;
+    } else if(quantity=="") {
+        document.getElementById("tot").innerHTML = "Please enter quantity and try again";
+    }
+    else if(price=="") {
+        document.getElementById("tot").innerHTML = "Please enter price and try again";
+    }
+}
+    </script>
+    <div id="id1" class="col" onclick="changeit()">
+        Hello world :)
+    </div>
+    <div class="col">
+        <h2>Counter application</h2>
+        <div id="id2" >Count is</div>
+        <div>
+            <button type="button" onclick="increment()">increment</button>
+            <button type="button" onclick="decrement()">decrement</button>
+        </div>
+    </div>
+    <div class="col">
+        <div>
+            <label>Enter no of products</label>
+            <input type="number" id="pn">
+        </div>
+        <div>
+            <label>Enter cost</label>
+            <input type="number" id="cost">
+        </div>
+        <div>
+            <div id="tot" >Total is</div>
+            <button type="button" onclick="total()">Total</button>
+        </div>
+    </div>
+</body>
+</html>

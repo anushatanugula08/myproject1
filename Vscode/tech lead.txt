@@ -1,0 +1,19 @@
+Agile principles-next session work
+
+BA(Business Analyst),PO(Product Owner),devops,QA,designer,developer,scrum master
+
+theme,epic,feature,user story-individual feauter(which should have benefit) delivarable with in a sprint/iteration(10 business days),task-SMART
+SPECIFIC MEASURABLE(TIME ESTIMATION) ACHIEVABLE RELEVANT TIME BOX
+
+BA(Business Analyst),PO(Product Owner)-should approve every user story at the end
+
+Refactoring-reusing the code
+automation testing
+
+PAIR PROGRAMMING
+
+SDET
+
+Scrum technology
+
+story point

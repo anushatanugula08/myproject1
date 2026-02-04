@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ </head>
+<body>
+  <table>
+	<tr>
+		<th>Id</td>
+		<th>Name</td>
+		<th>Salary</td>
+	</tr>
+	<tr>
+		<td>2465933</td>
+		<td>Anusha</td>
+		<td>25000</td>
+	</tr>
+	<tr>
+		<td>2465934</td>
+		<td>Shipla</td>
+		<td>35000</td>
+	</tr>
+	<tr>
+		<td>2465934</td>
+		<td>Shravya</td>
+		<td>28000</td>
+	</tr>
+</table>
+</body>
+</html>
+
+

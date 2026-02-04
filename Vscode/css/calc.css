@@ -1,0 +1,25 @@
+.calc
+{
+    padding: 20pt;
+    border: solid darkcyan;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    width:30%;
+    background-color: antiquewhite;
+}
+label{
+    float:left;
+    
+}
+input{
+    width:110pt;
+    margin-top: 2pt;
+}
+input[type="button"]
+{
+    width: 80pt;
+}
+input[type="reset"]
+{
+    width:80pt;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee
+        {
+            // default constructor
+        //    constructor()
+        //    {
+        //      this.id=5933;
+        //      this.name="Anusha";
+        //      this.salary=23000;
+        //    }
+            // only one constructor is allowed once
+        //    parameterized constructor...at a time use only one constructor otherwise one overrides the other
+           constructor(id,name,salary)
+           {
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+           }
+           display()
+           {
+            console.log("Employee information");
+            console.log(this.id)
+            console.log(this.name)
+            console.log(this.salary)
+           }
+
+        }
+        // for default constructor
+        // emp1=new Employee()
+
+        // emp1=new Employee(5933,"Anusha",23000);//for overloaded constructor
+        // console.log(emp1.id);
+        // console.log(emp1.name);
+        // console.log(emp1.salary);
+
+        class Manager extends Employee
+        {
+            //default constructor
+            // constructor()
+            // {
+            //     super(8000,"Anshu",23000);
+                
+            // }
+            //if you want to add values to constructor
+            constructor(location,country)
+            {
+                super(8000,"Anshu",23000);
+                this.location=location;
+                this.country=country;
+            }
+        }
+        //for default constructor
+        // man=new Manager()
+        man=new Manager("chennai","india")
+        man.display()
+        //to print location and country
+        console.log(man.location)
+        console.log(man.country)
+    </script>
+</body>
+</html>

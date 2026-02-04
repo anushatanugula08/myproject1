@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script>
+        $(
+            () => {
+                function getNumber(){
+                    var a = Number($("#n1").val());
+                    var b = Number($("#n2").val());
+                    if(a=="")
+                    alert("no1 is blank")
+            // else if(isNaN(a))
+            // alert("no1 is not a number")
+                    if(b=="")
+                    alert("no2 is blank")
+            // else if(isNaN(b))
+            // alert("no2 is not a number")
+                    else 
+                    return {a,b};
+                }
+ 
+                $("#btn1").click(
+                    () => {
+                    var {a,b} = getNumber();
+                    var c = a+b;
+                    $("#result").val(c);
+                }
+            )
+                $("#btn2").click(
+                    () => {
+                    var {a,b} = getNumber();
+                    var c = a-b;
+                    $("#result").val(c);
+                }
+            )
+                $("#btn3").click(
+                    () => {
+                    var {a,b} = getNumber();
+                    var c = a*b;
+                    $("#result").val(c);
+                }
+            )
+                 $("#btn4").click(
+                () => {
+                    var {a,b} = getNumber();
+                    var c = (a/b).toFixed(2) ;
+                    $("#result").val(c);
+                }
+            )
+            }
+        )
+    </script>
+</head>
+<body>
+    <div class="container bg-success text-light p-5 m-5 w-75">
+        <div class="form-group">
+            <label for="">Enter no1</label>
+            <input type="number" name="" id="n1" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Enter no2</label>
+            <input type="number" name="" id="n2" class="form-control">
+        </div>
+        <div class="form-group text-end">
+            <label>Result</label>
+            <input name="" id="result">
+        </div>
+        <div>
+            <input type="button" name="" id="btn1" class="btn btn-info" value="Addition">
+            <input type="button" name="" id="btn2" class="btn btn-info" value="Subtraction">
+            <input type="button" name="" id="btn3" class="btn btn-info" value="Multiplication">
+            <input type="button" name="" id="btn4" class="btn btn-info" value="Division">
+        </div>
+    </div>
+</body>
+</html>
+   
+           
+           

@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    text-indent: 50pt;
+    text-decoration:underline;
+    text-shadow: 5pt 15pt 2pt  brown;
+    width: 30%;
+    
+}
+*{
+    padding: 20pt;
+    border: solid darkcyan;
+}

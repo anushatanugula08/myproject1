@@ -1,0 +1,12 @@
+document.write("Hello world to javascript")
+            var a=10
+            var b=20
+            var c=a+b 
+           
+            window.document.write("<br>no1 is"+a)
+            document.write("<br>no2 is"+b)
+            /*document.write("<br>sum is"+c)*/
+            document.write("<br>sum is",c)
+        window.alert("no1 is "+a)
+        alert("no2 is "+b)
+        alert("sum is "+c)

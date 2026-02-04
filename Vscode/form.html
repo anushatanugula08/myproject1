@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            label{
+                float:left;
+                width:100pt;
+            }
+            input{
+                width:110pt;
+                margin-bottom: 5pt;
+            }
+            
+            form{
+                margin-left: 300pt;
+                margin-top: 30pt;
+                border:solid;
+                padding:20pt;
+                width:30%;
+                background-color: CadetBlue;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form action="" method="get">
+            <div>
+                <label>Enter ID</label>
+                <input type="number" maxlength="4" max="9999" min="99" value="5933" autocomplete required name="id">
+            </div>
+            <div>
+                <label>Enter Name</label>
+                <input type="text" required maxlength="10" minlength="5" autocomplete="yes" value="Anusha" name="name">
+            </div>
+            <div>
+                <label>Enter E-mail</label>
+                <input type="email" required name="email" placeholder="Enter an email">
+
+            </div>
+            <div>
+                <label>Enter DOB</label>
+                <input type="date" required name="dob">
+            </div>
+            
+            <div>
+                <label>Enter entry time</label>
+                <input type="time" name="entry_time">
+            </div>
+            <div>
+                <label>Enter Age</label>
+                <input type="range" required name="age" min="12" max="99">
+            </div>
+            <div>
+                <label>Select City</label>
+                <!--<select name="city" ></select>-->
+                <select name="city" multiple>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="banglore">Banglore</option>
+                    <option value="mumbai">Mumbai</option>
+
+
+                </select>
+            </div>
+            <div>
+                <label>Select Department</label>
+                <input type="text" list="department" name="dept">
+                <datalist id="department">
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Mechanical </option>
+                    <option> Electrics and electronics</option>
+                    <option> Auto mobile</option>
+                </datalist>
+            </div>
+            <div>
+                <label >Upload File</label>
+                <input type="file" name="file">
+            </div>
+            <div>
+                <label>Enter pin code</label>
+                <input type="text" pattern="[0-9]{6}">
+            </div>
+            <div>
+                <button type="submit">Send</button>
+              <button type="reset">Cancel</button>
+               <!--<input type="reset" value="Cancel">-->
+            </div>
+
+        </form>
+    </body>
+</html>

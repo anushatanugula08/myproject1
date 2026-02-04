@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var product=localStorage.getItem("prd");
+        var price=localStorage.getItem("cost");
+        var city=localStorage.removeItem("location");
+        // var city=localStorage.getItem("location");
+        document.writeln("Product is: "+product)
+        document.writeln("<br>Price is: "+price)
+        document.writeln("<br>city is: "+city)
+    </script>
+</body>
+</html>

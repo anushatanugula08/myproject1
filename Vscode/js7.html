@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar1=new Array(3)
+        console.log(ar1)
+        ar1[0]=11
+        ar1[1]=22
+        ar1[2]=33
+        console.log(ar1)
+        var ar2=new Array(1,2,3,4,5);
+        console.log(ar2)
+        var names=["Anusha","Anjali","vani"];
+        console.log(names)
+        console.log(names[0])
+        console.log(names[1])
+        console.log(names[2])
+        document.writeln("<br> using simple for loop")
+        for (let index = 0; index < names.length; index++) {
+            document.write("<br> "+names[index])
+            
+        }
+        document.writeln("<br> using  for in loop")
+        for(var key in names)
+        {
+            document.writeln("<br> "+names[key])
+        }
+        document.writeln("<br> using  for of loop")
+        for(var element of names)
+        {
+            document.writeln("<br> "+element)
+        }
+        var newarray1=ar1.concat(ar2);
+        console.log("concat of ar1 "+ar1+" ar2 "+ar2+" is "+newarray1);
+        console.log("concat of ar1 ",ar1," ar2 ",ar2," is "+newarray1);
+        console.log(ar1)
+        var a=ar1.pop()//remove and return the last element
+        console.log("popped element  :",a)
+        console.log("after popping: ",ar1)
+        ar1.push(198)//push add element at last position
+        console.log("after push ar1: ",ar1)
+        //shift remove and return element from 1st position
+        //unshift add elemnt at first position
+        var city=["delhi","chennai","noida","hyderabad","banglore","vizag"]
+        console.log(city)
+        city.splice(3); //delets elements after index 3
+        console.log(city)
+        // city.splice(0,0,"mumbai") //0 index is replaced,no items are deleted
+        city.splice(0,2,"mumbai")//0 is the index which will get replaced,2 is count of the values to get deleted
+        console.log(city)
+
+
+
+    </script>
+    
+</body>
+</html>
